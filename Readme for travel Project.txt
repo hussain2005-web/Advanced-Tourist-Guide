@@ -125,7 +125,3 @@ travel = storage name
 PHP = connector
 
 When names match → connection works ✅
-
-🔑 Now LOGIN Details
-Username: zaid22@gmail.com
-Password: Zaidshaikh$22
