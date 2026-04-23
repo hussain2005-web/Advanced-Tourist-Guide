@@ -1,0 +1,54 @@
+<?php
+    @include 'conn.php';
+    if(isset($_POST['add_package'])){
+    $pck_name = $_POST['pck_name'];
+    $pck_description = $_POST['pck_description'];
+    $pck_rating = $_POST['pck_rating'];
+    $pck_days = $_POST['pck_days'];
+    $pck_hotel = $_POST['pck_hotel'];
+    $pck_image = $_FILES['pck_image']['name'];
+    $pck_image_tmp_name = $_FILES['pck_image']['tmp_name'];
+    $pck_image_folder = 'uploaded_images/'.$pck_image;
+    if(empty($pck_name) || empty($pck_description) || empty($pck_rating) || empty($pck_days) || empty($pck_hotel) || empty($pck_image) )
+    {
+        $message[]= ' please fill out all';
+    }
+    else{
+        $insert=" INSERT into package(p_name, p_description, p_rating, p_days, p_hotel, p_image) values ('$pck_name','$pck_description','$pck_rating','$pck_days','$pck_hotel','$pck_image')";
+        $upload = mysqli_query($conn, $insert);
+        if($upload)
+        {
+        move_uploaded_file($pck_image_tmp_name, $pck_image_folder);
+        $message[] = 'new package added successfully!!!';
+        header('location:dashboard.php?page=update');
+        }
+        else{
+        $message[]= 'something went wrong try again 6';
+         }
+    }
+}
+?>
+<?php
+    if(isset($message)){
+        foreach($message as $message){
+            echo'<span class="message">'.$message.'</span>';
+        }
+    }
+?>
+<div>
+<div id="formBox">
+<form action="" method="post" enctype="multipart/form-data">
+<h3 id="">Add New product</h3>
+
+<input type="text" placeholder="Enter name of location" name="pck_name" class="inputBox">
+<input type="text" placeholder="Enter description of location" name="pck_description" class="inputBox">
+<input type="text" placeholder="Enter rating of location" name="pck_rating" class="inputBox">
+<input type="text" placeholder="Enter no. of days of tour" name="pck_days" class="inputBox">
+<input type="text" placeholder="Enter name of hotel" name="pck_hotel" class="inputBox">
+<input type="file" accept="image/png, image/jpeg, image/jpg" name="pck_image" class="inputBox">
+<input type="submit" class="inputBtn" name="add_package" value="Add Package">
+</form>
+</div>
+
+
+</div>

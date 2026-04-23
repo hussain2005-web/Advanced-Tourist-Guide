@@ -1,0 +1,263 @@
+*{
+margin:0px;
+padding:0px;
+box-sizing: border-box;
+}
+
+#container{
+width:100%;
+margin:0px;
+padding:0px;
+}
+
+#navbar{
+margin:0px;
+padding:10px;
+height:90px;
+background:#fff;
+color:#ffffff;
+}
+
+#navbar a:hover{
+color:#8e44ad;
+}
+
+#menubar{
+height:calc(100% - 90px);
+margin:0px;
+padding:20px;
+background:#514b4b4a;
+overflow-y:auto;
+}
+
+#content{
+height:calc(100% - 90px);
+margin:0px;
+padding:30px;
+background:#e6e6e6;
+color:#000000;
+overflow-y:auto;
+}
+
+#logo{
+font-size: 2rem;
+float:left;
+color:#222;
+margin:22px;
+text-decoration:none;
+}
+
+#menubarHeading{
+font-weight:bold;
+font-size:20px;
+margin:15px 0px;
+color:#222;
+}
+
+#menubarLink{
+color:#8e44ad;
+text-decoration:none;
+font-weight:bold;
+font-size:15px;
+margin:15px 0px;
+margin-left:20px;
+}
+
+#formBox{
+background:#ffffff;
+padding:20px;
+border-radius:8px;
+display:table;
+margin-top:20px;
+border:1px solid #000000;
+}
+
+
+.inputBox{
+width:100%;
+padding:10px;
+border-radius:8px;
+border:1px solid #000000;
+margin:20px 0px;
+}
+
+.inputBtn{
+background:#2196f3;
+padding:10px 20px;
+border-radius:8px;
+border:0px;
+color:#ffffff;
+margin:20px auto;
+display:block;
+text-decoration:none;
+cursor:pointer;
+}
+
+.inputBtn:hover{
+background:#2196f3;
+padding:10px 20px;
+border-radius:8px;
+border:0px;
+color:#ffffff;
+margin:20px auto;
+display:block;
+text-decoration:none;
+cursor:pointer;
+}
+
+.link1{
+color:#888888;
+margin:5px 10px;
+padding:5px 10px;
+font-size:12px;
+display:table;
+float:left;
+background:#cccccc;
+border-radius:5px;
+text-decoration:none;
+}
+
+.link1:hover{
+color:#000000;
+margin:5px 10px;
+padding:5px 10px;
+font-size:12px;
+display:table;
+float:left;
+background:#cccccc;
+border-radius:5px;
+text-decoration:none;
+}
+
+#para1{
+font-size:18px;
+}
+
+#txt1{
+text-align: center;
+}
+
+#loginBox{
+padding:10px 20px;
+background:#ffffff;
+border-radius:8px;
+border:1px solid #cccccc;
+margin-top:100px;
+}
+
+#heading1{
+text-align:center;
+color:#000000;
+font-size:23px;
+}
+
+#errtxt{
+color:#ff0000;
+font-size:15px;
+font-weight:bold;
+}
+
+#logoutBtn{
+float:right;
+color:#222;
+margin:22px;
+font-size:20px;
+text-decoration:none;
+}
+
+#star{
+color:#ff0000;
+}
+
+#dropDown{
+width:80px;
+padding:5px;
+border-radius:8px;
+border:1px solid #000000;
+margin:0px;
+}
+
+#table{
+background:#ffffff;
+margin:20px 0px;
+display:inline-table;
+border-radius:8px;
+}
+
+#whitebg{
+display:table;
+background:#ffffff;
+margin-bottom:50px;
+}
+
+#icons>img{
+width:100%;
+}
+
+#icons>b{
+width:100%;
+text-decoration:none;
+color:#000000;
+font-size:18px;
+text-align:center;
+display:block;
+}
+
+#icons>b:hover{
+    color:#8e44ad;
+
+}
+
+body {
+    background-color: #eee;
+    color: #222;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #8e44ad;
+}
+
+form {
+    margin: 20px auto; /* Center the form horizontally */
+    padding: 20px;
+    border: 1px solid #8e44ad;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 2rem;
+    max-width: 50rem; /* Limit the width of the form */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width */
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="password"],
+input[type="submit"] {
+    width: calc(100% - 22px); /* Adjust width to account for padding and border */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #8e44ad;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+input[type="submit"] {
+    background-color: #8e44ad;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #6c3483; /* Darker shade for hover effect */
+}
+
+/* CSS for My Bookings page */
+
+
+  
+
